@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+.canvas{
+    display: grid;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.canvasPanel{
+    background-color: rgb(160, 160, 160);
+}
