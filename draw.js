@@ -5,11 +5,11 @@ let canvasPanels = [];
 
 const canvas = document.querySelector('.canvas');
 
-let paintColor = "black";
+let paintColor = "rgb(54, 54, 54)";
 
 function buildCanvas(width, height){
-    canvas.style.gridTemplateColumns = "repeat(8, 1fr)";
-    canvas.style.gridTemplateRows = "repeat(8, 1fr)";
+    canvas.style.gridTemplateColumns = "repeat(24, 1fr)";
+    canvas.style.gridTemplateRows = "repeat(24, 1fr)";
     for(let i = 0; i < width * height; i++){
         let panel = document.createElement('div');
         panel.classList.add("canvasPanel");
@@ -23,4 +23,4 @@ function paintCel(myCel){
     myCel.style.backgroundColor = paintColor;
 }
 
-buildCanvas(8, 8);
+buildCanvas(24, 24);
