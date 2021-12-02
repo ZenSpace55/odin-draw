@@ -5,10 +5,10 @@ body{
 #CE1212*/
 
 .canvasContainer{
-    width: 720px;
-    height: 600px;
+    width: 600px;
+    height: 720px;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 75px;
     background-color:rgb(214, 85, 85); /*#810000;*/
     border-radius: 20px;
     border-style: solid;
@@ -19,8 +19,8 @@ body{
 .canvasBack{
     width: 510px;
     height: 510px;
-    margin-left: 23%;
-    margin-top: 45px;
+    margin-left: 45px;
+    margin-top: 25px;
     background-color: #1b1717;
 }
 
@@ -34,8 +34,8 @@ body{
 
 .sliderContainer{
     position: relative;
-    left: -70px;
-    bottom: 275px;
+    margin-left: 250px;
+    top: 610px;
 }
 
 .slider{
@@ -46,8 +46,6 @@ body{
     opacity: .9;
     transition: opacity .2;
     background-color: #4e1c1c;
-    transform: rotate(270deg);
-    -moz-transform: rotate(270deg);
     border-radius: 5px;
 }
 
@@ -74,8 +72,8 @@ body{
     width: 120px;
     height: 40px;
     position: relative;
-    left: 20px;
-    bottom: 500px;
+    left: 45px;
+    top: 40px;
     transition:  .1s;
     transition-timing-function: ease-in;
 }
