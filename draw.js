@@ -26,7 +26,7 @@ function buildCanvas(width, height){
         let panel = document.createElement('div');
         panel.classList.add("canvasPanel");
         canvas.appendChild(panel);
-        panel.addEventListener("mouseover", function(){paintCel(panel, paintColor)});
+        panel.addEventListener("mouseover", function(){paintCell(panel, paintColor)});
     }
 }
 
@@ -47,7 +47,7 @@ function paintCell(myCell, color){
 function clearCanvas(){
     let cells = canvas.childNodes;
     for (let i = 0; i < canvas.childNodes.length; i++){
-        paintCel(cells[i], clearColor);
+        paintCell(cells[i], clearColor);
     }
 }
 prepCanvas();
