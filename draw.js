@@ -40,14 +40,14 @@ function changeCanvasResolution(width, height){
 
 
 
-function paintCel(myCel, color){
-    myCel.style.backgroundColor = color;
+function paintCell(myCell, color){
+    myCell.style.backgroundColor = color;
 }
 
 function clearCanvas(){
-    let cels = canvas.childNodes;
+    let cells = canvas.childNodes;
     for (let i = 0; i < canvas.childNodes.length; i++){
-        paintCel(cels[i], clearColor);
+        paintCel(cells[i], clearColor);
     }
 }
 prepCanvas();
