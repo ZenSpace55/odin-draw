@@ -5,18 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="draw.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico" type="text/css">
     <link rel="stylesheet" href="styles.css" />
     <title>Document</title>
 </head>
 <body>
     <div class="canvasContainer">
+        <div class="titlePlate"><p>Odin-Sketch</p></div>
         <div class="sliderContainer">
+            <p>Resolution</p>
             <input type="range" min="1" max="100" value="32" class="slider">
         </div>
         <div class="canvasBack">
             <div class="canvas"></div>
         </div>
-        <button onclick="clearCanvas()" class="resetButton">Reset</button>
+        <div class="resetButtonContainer">
+            <p>Reset</p>
+            <button onclick="clearCanvas()" class="resetButton"></button>
+        </div>
 
     </div>
 

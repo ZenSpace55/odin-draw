@@ -5,8 +5,17 @@ let canvasPanels = [];
 
 const canvas = document.querySelector('.canvas');
 
+const resSlider = document.querySelector('.slider');
+
+
 let paintColor = "rgb(54, 54, 54)";
 let clearColor = "rgb(160, 160, 160)";
+
+function prepCanvas(){
+    resSlider.value = 100;
+    resSlider.addEventListener("input", function(){changeCanvasResolution(resSlider.value, resSlider.value)});
+    buildCanvas(resSlider.value, resSlider.value);
+}
 
 function buildCanvas(width, height){
     gridWidth = width;
@@ -21,6 +30,16 @@ function buildCanvas(width, height){
     }
 }
 
+function changeCanvasResolution(width, height){
+    gridWidth = width;
+    gridHeight = height;
+    clearCanvas();
+    canvas.style.gridTemplateColumns = "repeat(" + gridWidth +", 1fr)";
+    canvas.style.gridTemplateRows = "repeat(" + gridHeight +", 1fr)";
+}
+
+
+
 function paintCel(myCel, color){
     myCel.style.backgroundColor = color;
 }
@@ -31,4 +50,5 @@ function clearCanvas(){
         paintCel(cels[i], clearColor);
     }
 }
-buildCanvas(24, 24);
+prepCanvas();
+//buildCanvas(24, 24);

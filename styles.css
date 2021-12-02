@@ -8,7 +8,6 @@ body{
     width: 600px;
     height: 720px;
     margin: auto;
-    margin-top: 75px;
     background-color:rgb(214, 85, 85); /*#810000;*/
     border-radius: 20px;
     border-style: solid;
@@ -20,7 +19,7 @@ body{
     width: 510px;
     height: 510px;
     margin-left: 45px;
-    margin-top: 25px;
+    margin-top: -145px;
     background-color: #1b1717;
 }
 
@@ -35,14 +34,17 @@ body{
 .sliderContainer{
     position: relative;
     margin-left: 250px;
-    top: 610px;
+    top: 478px;
 }
 
 .slider{
     -webkit-appearance: none;
     appearance: none;
+    position: relative;
     width: 300px;
     height:  20px;
+    bottom: 15px;
+    margin: auto;
     opacity: .9;
     transition: opacity .2;
     background-color: #4e1c1c;
@@ -66,18 +68,38 @@ body{
     background-color: rgb(160, 160, 160);
 }
 
+.resetButtonContainer{
+    width: 120px;
+    height: 100px;
+    position: relative;
+    left: 45px;
+    top: -20px;
+}
+
 .resetButton{
     background-color: #EEEBDD;
     border-radius: 15px;
+    position: relative;
     width: 120px;
     height: 40px;
-    position: relative;
-    left: 45px;
-    top: 40px;
+    bottom: 20px;
     transition:  .1s;
     transition-timing-function: ease-in;
 }
 
 .resetButton:hover{
     transform: scale(1.06);
+}
+
+p{
+    font-family: 'Pacifico', sans-serif;
+    color: #EEEBDD;
+    text-shadow: 2px 2px #4e1c1c;
+    font-size: 28px;
+    text-align: center;
+}
+
+.titlePlate{
+    margin-top: -20px;
+    padding-bottom: 5px;
 }
